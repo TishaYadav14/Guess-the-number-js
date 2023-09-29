@@ -66,6 +66,8 @@ function onSubmit(e) {
         hint.textContent = "Oops! Try a greater number.";
         button.value = "Guess Again";
     } else {
+        hint.style.fontFamily = "'Bungee Spice', cursive";
+        hint.style.fontSize = "2.5rem";
         hint.textContent = "Congratulations! You guessed the number in " + count + " guesses.";
         isGameOver = true;
         // guessInput.value = ""; // Clear the input field
